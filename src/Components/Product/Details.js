@@ -103,9 +103,9 @@ function Details() {
     return (
         <div className='details-product'>
               <div className='route-link'>
-                  <Link to='/' >Trang Chủ</Link>
+                  <Link to='./' >Trang Chủ</Link>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="align-self-center"><path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                  <Link to={`/Product/${Id}`} >
+                  <Link to={`./Product/${Id}`} >
                       {item.name}
                   </Link>  
               </div>

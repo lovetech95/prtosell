@@ -42,7 +42,7 @@ function  Navbar() {
 
          return (
                     <nav className="NavbarItems">
-                          <h2 className="Navbar-logo"><Link to="/" style={{color:'white' }}>PracticeToSell</Link></h2>
+                          <h2 className="Navbar-logo"><Link to="./" style={{color:'white' }}>PracticeToSell</Link></h2>
                           <input className='form-control' 
                                  style={{width:450, height:50}} 
                                  placeholder='Tìm Kiếm Sản Phẩm' 
