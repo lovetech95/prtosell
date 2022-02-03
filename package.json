@@ -2,7 +2,7 @@
   "name": "practice2sell",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lovetech95.github.io/p2s",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -51,11 +51,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lovetech95/p2s.git"
+    "url": "git+https://github.com/lovetech95/practice2sell.git"
   },
   "author": "Nghia Le",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lovetech95/p2s/issues"
+    "url": "https://github.com/lovetech95/practice2sell/issues"
   }
 }
