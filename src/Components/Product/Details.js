@@ -35,7 +35,7 @@ function Details() {
     const [item,setItems] = useState({});
     const [image,setImages] = useState([]);
     const [count,setCount] = useState(1);
-    const Id = window.location.pathname.replace('/Product/','')
+    const Id = window.location.pathname.replace('/practice2sell/Product/','')
   
     useEffect(() => {
             fetch(`https://app-api.selly.vn/products/${Id}`)

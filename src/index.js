@@ -6,7 +6,7 @@ import App from './App';
 
 
 ReactDOM.render(
-            <Router>
+            <Router basename="/practice2sell" >
                 <App/>
             </Router>,
             document.getElementById('root')

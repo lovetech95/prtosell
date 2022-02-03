@@ -14,11 +14,11 @@ function App() {
     <div className="App">
         <Navbar />
           <Routes>
-              <Route path="./" exact element={<Content />} ></Route>
-              <Route path="./Donhang" element={<Donhang />} ></Route>
-              <Route path="./Giohang" element={<Giohang />} ></Route>
-              <Route path="./Profile" element={<Profile />} ></Route> 
-              <Route path="./Product/:id" exact element={<Details />} ></Route>                  
+              <Route path="/"  element={<Content />} ></Route>
+              <Route path="/Donhang" element={<Donhang />} ></Route>
+              <Route path="/Giohang" element={<Giohang />} ></Route>
+              <Route path="/Profile" element={<Profile />} ></Route> 
+              <Route path="/Product/:id" element={<Details />} ></Route>                  
           </Routes>
         <Footer />
     </div>
