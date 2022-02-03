@@ -18,8 +18,8 @@ function Products(result) {
 
 
     const HandleClick = (target_id) => {
-        let host = window.location.host;
-        let template = 'http://'+host+`/Product/${target_id}`;
+        let host = window.location.href;
+        let template = host+`/Product/${target_id}`;
         window.location.href = template;
     }     
 
