@@ -1,0 +1,46 @@
+.NavbarItems {
+    background-color: rgb(118, 162, 245);
+    padding: 15px 20px 10px 20px;
+    color:aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    z-index:100;
+}
+
+.invisible {
+    display: none;
+}
+
+.Navbar-logo {
+    width: auto;
+    color: white;
+}
+
+
+
+
+.Navbar-list-items {
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 20px;
+    text-align: center;
+    list-style: none;
+    width: calc(100% -300px);
+    font-size: 20px;
+    color:black;
+    justify-content: right;
+    height: 30px;
+}
+
+.Navbar-list-items > li > a {
+    text-decoration: none;
+    color:white;
+}
+
+.Navbar-list-items > li > a:hover {
+    text-decoration: underline;
+}
