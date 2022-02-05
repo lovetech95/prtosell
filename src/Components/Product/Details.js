@@ -25,7 +25,7 @@ function Details() {
         })
 
         
-   },[])
+   },[id])
 
 
    const images = image.map((row) => {
