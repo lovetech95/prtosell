@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function Products(result) {
 
@@ -16,12 +16,12 @@ function Products(result) {
         return finalStr;
     }
 
-
+    /*
     const HandleClick = (target_id) => {
         let host = window.location.href;
         let template = host+`Product/${target_id}`;
         window.location.href = template;
-    }     
+    } */    
 
 
 
@@ -32,9 +32,9 @@ function Products(result) {
                 return (
                    
                             <div className='col l-2 c-6' key={item.id}  >
-                                <button    
-                                className='Course-Items'
-                                onClick={() => {HandleClick(item.id) }}
+                                <Link    
+                                className='Course-Items btn btn-default'
+                                to={`Product/${item.id}`}
                                 >
                              
                                     <img src={item.photos_links} className='img_adjust' alt={item.name} />
@@ -49,7 +49,7 @@ function Products(result) {
                                         </div>
                                     </div>
                               
-                                </button>
+                                </Link>
                             </div>
 
                          )

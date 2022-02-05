@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Autocomplete.css';
 
 function Autocomplete(target_data) {
@@ -6,12 +7,6 @@ function Autocomplete(target_data) {
     const Listitems = target_data.target;
     const keyword = target_data.keyword;
 
-
-    const HandleClick = (target_id) => {
-        let host = window.location.href;
-        let template = host+`Product/${target_id}`;
-        window.location.href = template;
-    }     
 
 
     return (
@@ -25,13 +20,13 @@ function Autocomplete(target_data) {
                  {
                     keyword && Listitems.map((row) => {
                          return (
-                             <button className='suggest-box btn btn-default'
-                                     onClick={() => HandleClick(row.id)}   
+                             <Link className='suggest-box btn btn-default'
+                                     to={`Product/${row.id}`}
                              >
                                 
                                 <img src={row.photos_links} className='suggest-img'/> &#160; &#160;
                                 <b className='items-suggest'>{row.name}</b>   
-                             </button>
+                             </Link>
                              
                          );
                      })

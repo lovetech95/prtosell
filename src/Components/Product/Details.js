@@ -1,55 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Details.css';
 import ImageGallery from 'react-image-gallery';
 
 
 function Details() {
-
-    /*    
-    const images = [
-        {
-          original: 'https://picsum.photos/id/1018/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1018/250/150/',
-        },
-        {
-          original: 'https://picsum.photos/id/1015/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1015/250/150/',
-        },
-        {
-          original: 'https://picsum.photos/id/1019/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-        {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
-          },
-          {
-            original: 'https://picsum.photos/id/1019/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1019/250/150/',
-          }        
-      ];
-
-    */  
-
-    const [item,setItems] = useState({});
     const [image,setImages] = useState([]);
     const [count,setCount] = useState(1);
-    const Id = window.location.pathname.replace('/practice2sell/Product/','')
-  
+    const [value,setValue] = useState({});
+    const location = useLocation();
+
+    const id = location.pathname.replace('/Product/','');
+
     useEffect(() => {
-            fetch(`https://app-api.selly.vn/products/${Id}`)
-                 .then(res => res.json())
-                 .then(row => row.data.product)
-                 .then(item => {
-                     setItems(item)
-                     setImages(item.photos)
-                 
-                    });
 
-   },[Id])
+        
 
+        fetch(`https://app-api.selly.vn/products/${id}`)
+        .then(res => res.json())
+        .then(result => result.data.product)
+        .then(data => {
+            setValue(data)
+            setImages(data.photos)
+        })
 
+        
+   },[])
 
 
    const images = image.map((row) => {
@@ -75,38 +51,35 @@ function Details() {
     const productInfos = [
             {
                 title: 'Giá bán thị trường',
-                value: JSON.stringify(item).includes('market') === true ? separator(item.price.market) : null
+                value: JSON.stringify(value).includes('market') === true ? separator(value.price.market) : null
             },
             {
                 title: 'Giá nhà cung cấp',
-                value: JSON.stringify(item).includes('supplier') === true ? separator(item.price.supplier + 0.6*item.price.profit) : null 
+                value: JSON.stringify(value).includes('supplier') === true ? separator(value.price.supplier + 0.6*value.price.profit) : null 
             },
             {
                 title: 'Hoa hồng',
-                value: JSON.stringify(item).includes('profit') === true ? separator(0.4*item.price.profit) : null 
+                value: JSON.stringify(value).includes('profit') === true ? separator(0.4*value.price.profit) : null 
             },
             {
                 title: 'Thương hiệu',
-                value: JSON.stringify(item).includes('supplier') === true ? item.info.supplier.name : '' 
+                value: JSON.stringify(value).includes('supplier') === true ? value.info.supplier.name : '' 
             },
             {
                 title: 'Chi nhánh',
-                value: JSON.stringify(item).includes('inventory') === true ? item.info.inventory.location.provinceName : '' 
+                value: JSON.stringify(value).includes('inventory') === true ? value.info.inventory.location.provinceName : '' 
             }
     ];
 
     
 
-
- 
-
     return (
         <div className='details-product'>
               <div className='route-link'>
-                  <Link to='./' >Trang Chủ</Link>
+                  <Link to='../' >Trang Chủ</Link>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="align-self-center"><path d="M9 6L15 12L9 18" stroke="#384059" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                  <Link to={`./Product/${Id}`} >
-                      {item.name}
+                  <Link to='' >
+                      {value.name}
                   </Link>  
               </div>
 
@@ -118,11 +91,11 @@ function Details() {
                               />
                         </div>
                         <div className='col-md-7 col-xs-12 info-product'>
-                            <h3>{item.name}</h3>  
+                            <h3>{value.name}</h3>  
                             <div className='price'>
-                                <i>Giá bán:</i>&nbsp;&nbsp; <b style={{color:'red',fontSize:'30px'}}>{ JSON.stringify(item).includes('market') === true ? separator(item.price.market) : '' }</b>
+                                <i>Giá bán:</i>&nbsp;&nbsp; <b style={{color:'red',fontSize:'30px'}}>{ JSON.stringify(value).includes('market') === true ? separator(value.price.market) : '' }</b>
                                 <br />
-                                <i>Hoa Hồng:</i>&nbsp; <b style={{color:'black',fontSize:'20px'}}>{ JSON.stringify(item).includes('profit') === true ? separator(0.4*item.price.profit) : '' }</b>
+                                <i>Hoa Hồng:</i>&nbsp; <b style={{color:'black',fontSize:'20px'}}>{ JSON.stringify(value).includes('profit') === true ? separator(0.4*value.price.profit) : '' }</b>
                             </div>
                             <div className='ship'>
                                 <div className='free-ship'>                 
@@ -192,7 +165,7 @@ function Details() {
                         </div>
                         <div className='col-md-7 col-xs-12'>
                             <p className='header-des'>MÔ TẢ SẢN PHẨM</p>
-                            <div className='description-content' dangerouslySetInnerHTML={{ __html: item.desc }}>                         
+                            <div className='description-content' dangerouslySetInnerHTML={{ __html: value.desc }}>                         
                             </div>
                         </div>
                  </div>
