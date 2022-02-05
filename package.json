@@ -1,7 +1,7 @@
 {
   "name": "practice2sell",
   "version": "0.2.0",
-  "private": false,
+  "private": true,
   "homepage": "http://lovetech95.github.io/prtosell",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
