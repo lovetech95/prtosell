@@ -9,7 +9,7 @@ class Footer extends Component {
                 <div className='descrip'>
                     <p style={{width:1000}}>P2S là một nền tảng giúp các bạn cải thiện kỹ năng bán hàng mà 
                     không cần phải bỏ bất kỳ một đồng vốn nào trước khi 
-                    bắt đầu với sự nghiệp kinh doanh của chính bạn !! Chúng tôi luôn đồng hành với các bạn</p>
+                    bắt đầu với sự nghiệp kinh doanh của chính bạn !! P2S luôn đồng hành cùng các bạn</p>
                 </div>
                 <p>
                     <a href='#'>Điều khoản P2S</a>  
