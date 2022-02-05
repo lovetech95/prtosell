@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <div className='footer'>
-                <h1 className='footer-name'>NỀN TẢNG P2S</h1>
+                <h1 className='footer-name'>NỀN TẢNG HỖ TRỢ KỸ NĂNG P2S</h1>
                 <div className='descrip'>
                     <p style={{width:1000}}>P2S là một nền tảng giúp các bạn cải thiện kỹ năng bán hàng mà 
                     không cần phải bỏ bất kỳ một đồng vốn nào trước khi 
