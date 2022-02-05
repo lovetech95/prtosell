@@ -24,7 +24,7 @@ function Autocomplete(target_data) {
                                      to={`Product/${row.id}`}
                              >
                                 
-                                <img src={row.photos_links} className='suggest-img'/> &#160; &#160;
+                                <img src={row.photos_links} className='suggest-img' alt={row.name} /> &#160; &#160;
                                 <b className='items-suggest'>{row.name}</b>   
                              </Link>
                              
