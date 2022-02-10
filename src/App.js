@@ -8,6 +8,7 @@ import Donhang from './Components/Donhang/Donhang';
 import Giohang from './Components/Giohang/Giohang';
 import Profile from './Components/Profile/Profile';
 import Details from './Components/Product/Details';
+import Modal from './Components/Modals/Modal';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
               <Route path="/Donhang" element={<Donhang />} ></Route>
               <Route path="/Giohang" element={<Giohang />} ></Route>
               <Route path="/Profile" element={<Profile />} ></Route> 
+              <Route path="/Dieukhoan" element={<Modal />} ></Route> 
               <Route path="/Product/:id"  element={<Details />} />
           </Routes>
         <Footer />

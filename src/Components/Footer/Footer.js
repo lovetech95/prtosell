@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 class Footer extends Component {
@@ -17,9 +18,7 @@ class Footer extends Component {
                     chủ yếu dành cho các bạn trẻ có thêm kinh nghiệm thực tế. Mọi thắc mắc có thể liên hệ qua số điện thoại hoặc email bên dưới</p>
                 </div>
                 <p>
-                    <a href='#'>Điều khoản P2S</a>  
-                    &#160; | &#160;
-                    <a href='#'>Chính Sách Bảo Mật</a>
+                    <Link to='/Dieukhoan'> -- Điều khoản P2S || Chính sách Bảo mật -- </Link>
                 </p>
                 <p><b>Email:</b> leminhnghia111095@gmail.com - <b>Hotline:</b> (+84)-764-592-262</p>            
             </div>

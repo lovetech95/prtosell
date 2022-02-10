@@ -1,0 +1,8 @@
+.Modal {
+    position: fixed;
+    top:0; bottom: 0; right: 0; left: 0;
+    z-index: 101;
+    background-color: aliceblue;
+    padding: 20px 200px 50px 200px;
+    overflow-y: scroll;
+}
