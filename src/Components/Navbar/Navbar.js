@@ -88,19 +88,21 @@ function  Navbar() {
                               <Link to="/Profile"> Hồ Sơ của bạn
                               </Link>
                             </li>    
-                            <li className="items"  >                                                       
-                                <svg height='25' 
-                                     aria-hidden="true" 
-                                     focusable="false" 
-                                     data-prefix="fas" 
-                                     data-icon="receipt" 
-                                     class="svg-inline--fa fa-receipt fa-w-12" 
-                                     role="img" 
-                                     xmlns="http://www.w3.org/2000/svg" 
-                                     viewBox="0 0 384 512">
-                                <path fill="white" d="M358.4 3.2L320 48 265.6 3.2a15.9 15.9 0 0 0-19.2 0L192 48 137.6 3.2a15.9 15.9 0 0 0-19.2 0L64 48 25.6 3.2C15-4.7 0 2.8 0 16v480c0 13.2 15 20.7 25.6 12.8L64 464l54.4 44.8a15.9 15.9 0 0 0 19.2 0L192 464l54.4 44.8a15.9 15.9 0 0 0 19.2 0L320 464l38.4 44.8c10.5 7.9 25.6.4 25.6-12.8V16c0-13.2-15-20.7-25.6-12.8zM320 360c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h240c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h240c4.4 0 8 3.6 8 8v16zm0-96c0 4.4-3.6 8-8 8H72c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h240c4.4 0 8 3.6 8 8v16z"></path></svg>
-                                &#160;
-                              <Link to="/Donhang" >Giỏ Hàng</Link>
+                            <li className="items invisible"  >                                                       
+                                <svg 
+                                      height='25' 
+                                      aria-hidden="true" 
+                                      focusable="false" 
+                                      data-prefix="fas" 
+                                      data-icon="shopping-cart" 
+                                      class="svg-inline--fa fa-shopping-cart fa-w-18" 
+                                      role="img" xmlns="http://www.w3.org/2000/svg" 
+                                      viewBox="0 0 576 512">
+                                  <path fill="white" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg>
+                              &#160;
+                              <Link to="/Giohang" 
+                        
+                              >Giỏ Hàng</Link>
                             </li>      
 
                                          

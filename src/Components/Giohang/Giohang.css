@@ -1,3 +1,86 @@
-.bag {
-    margin-top: 100px;
+.bag  {
+    margin: 100px 170px 30px 170px;
+
+}
+
+.bag-content {
+    font-size: 15px;
+    width: 100%;
+}
+
+.filter-bag, .result-bag , .form-bag {
+    margin: 0px 0px 10px 0px;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.box-bag, .order-bag {
+    padding: 10px;
+}
+
+.filter-bag {
+    background-color: white;
+    height: 100px;
+    border: 0.2px solid rgba(231, 231, 231, 0.5);
+}
+
+.form-bag {
+    background-color: white;
+    height: auto;
+    max-height: 600px;
+    border: 0.2px solid rgba(231, 231, 231, 0.5);
+
+}
+
+.add-order {
+    background-color: #6d97e6;
+    width: 100%;
+    border-radius: 1px;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+}
+
+.result-bag {
+    background-color: white;
+}
+
+.img-order {
+    width: 100px;
+    height: 100px;
+}
+
+.order-items {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    margin: 5px;
+    border-bottom: 0.2px solid rgba(252, 252, 252, 0.274);
+}
+
+.info-order{
+    width: 100%;
+    display: block;
+    text-align: right;
+    display: block;
+    margin: 2px;
+}
+
+.ele-order {
+    
+}
+
+.toggle {
+    display: flex;
+}
+
+.hide {
+    height: 40px;
+    text-align: left;
+    width: 50px;
+    margin: 2px;
+    align-self: center;
+}
+
+.hide:hover {
+    color: whitesmoke;
 }

@@ -11,12 +11,11 @@ import Details from './Components/Product/Details';
 
 function App() {
 
-
   return (
     <div className="App">
         <Navbar />
           <Routes>
-              <Route path=""  element={<Content />} ></Route>
+              <Route path="/"  element={<Content />} ></Route>
               <Route path="/Donhang" element={<Donhang />} ></Route>
               <Route path="/Giohang" element={<Giohang />} ></Route>
               <Route path="/Profile" element={<Profile />} ></Route> 

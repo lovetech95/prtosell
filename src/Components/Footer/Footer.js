@@ -7,9 +7,14 @@ class Footer extends Component {
             <div className='footer'>
                 <h1 className='footer-name'>NỀN TẢNG HỖ TRỢ KỸ NĂNG P2S</h1>
                 <div className='descrip'>
-                    <p style={{width:1000}}>P2S là một nền tảng giúp các bạn cải thiện kỹ năng bán hàng mà 
+                    <p style={{width:1300}}>P2S là một nền tảng giúp các bạn cải thiện kỹ năng bán hàng mà 
                     không cần phải bỏ bất kỳ một đồng vốn nào trước khi 
-                    bắt đầu với sự nghiệp kinh doanh của chính bạn !! P2S luôn đồng hành cùng các bạn</p>
+                    bắt đầu với sự nghiệp kinh doanh của chính bạn !!</p>
+                </div>
+
+                <div className='descrip'>
+                    <p style={{width:800}}>Xin lưu ý rằng đây là một nền tảng tạo ra nhằm mục đích trải nghiệm kinh doanh, chưa phải là doanh nghiệp đăng ký kinh doanh, 
+                    chủ yếu dành cho các bạn trẻ có thêm kinh nghiệm thực tế. Mọi thắc mắc có thể liên hệ qua số điện thoại hoặc email bên dưới</p>
                 </div>
                 <p>
                     <a href='#'>Điều khoản P2S</a>  
