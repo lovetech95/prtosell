@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/prtosell/static/css/main.7f79dd52.css",
-    "main.js": "/prtosell/static/js/main.82b57cbc.js",
+    "main.js": "/prtosell/static/js/main.cd3aba44.js",
     "index.html": "/prtosell/index.html",
     "main.7f79dd52.css.map": "/prtosell/static/css/main.7f79dd52.css.map",
-    "main.82b57cbc.js.map": "/prtosell/static/js/main.82b57cbc.js.map"
+    "main.cd3aba44.js.map": "/prtosell/static/js/main.cd3aba44.js.map"
   },
   "entrypoints": [
     "static/css/main.7f79dd52.css",
-    "static/js/main.82b57cbc.js"
+    "static/js/main.cd3aba44.js"
   ]
 }
